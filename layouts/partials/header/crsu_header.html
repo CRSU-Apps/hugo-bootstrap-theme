@@ -1,0 +1,10 @@
+<div class="container-fluid bg-white">
+    <div id ="crsu-header" class="row justify-content-center">
+        <div class = "col-auto">
+            <a href="https://www.gla.ac.uk/research/az/evidencesynthesis/">
+                {{ $mainLogo := default "images/crsu-logo.jpeg" .Site.Params.mainLogo }}
+                <img src="{{ $mainLogo | relURL }}" alt = "CRSU Logo" class = "crsu-logo">
+            </a>
+        </div>
+    </div>
+</div>

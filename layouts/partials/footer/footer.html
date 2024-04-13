@@ -1,12 +1,30 @@
-<footer class="py-3 mt-auto bg-light">
-  <div class="container py-1 my-1">
-    <div class="d-flex flex-wrap justify-content-between align-items-center">
-      <p class="col-md mb-0 text-muted">{{ .Site.Copyright | safeHTML }}</p>
-      <ul class="nav col-md-auto justify-content-end">
-        {{ range .Site.Menus.footer -}}
-        <li class="nav-item"><a href="{{ .URL }}" class="nav-link px-2 text-muted"{{ with .Title }} title='{{ . }}' aria-label='{{ . }}'{{ end }}>{{ .Name }}</a></li>
-        {{ end -}}
-      </ul>
+<div class="container-fluid bg-white">
+  <footer class="crsu-footer">
+    <div class="row crsu-footer-row justify-content-center">
+      <div class="col-12 col-lg-3 footer-col">
+        <a href="https://www.gla.ac.uk/">
+          {{ $uofgLogo := default "images/footer/uofg.gif" .Site.Params.uofgLogo }}
+          <img src="{{ $uofgLogo | relURL }}" alt = "University of Glasgow Logo" class="footer-logo">
+        </a>
+      </div>
+      <div class="col-12 col-lg-3 footer-col">
+        <a href="https://www.gla.ac.uk/">
+          {{ $uoflLogo := default "images/footer/uofl.gif" .Site.Params.uoflLogo }}
+          <img src="{{ $uoflLogo | relURL }}" alt = "University of Leicester Logo" class="footer-logo">
+        </a>
+      </div>
+      <div class="col-12 col-lg-3 footer-col">
+        <a href="https://www.gla.ac.uk/">
+          {{ $uofyLogo := default "images/footer/uofy.jpeg" .Site.Params.uofyLogo }}
+          <img src="{{ $uofyLogo | relURL }}" alt = "University of York Logo" class="footer-logo">
+        </a>
+      </div>
+      <div class="col-12 col-lg-3 footer-col">
+        <a href="https://www.gla.ac.uk/">
+          {{ $cochraneLogo := default "images/footer/cochrane.gif" .Site.Params.cochraneLogo }}
+          <img src="{{ $cochraneLogo | relURL }}" alt = "Cochrane Logo" class="footer-logo">
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</div>
