@@ -103,11 +103,23 @@ a /*.feather*/ {
     margin-bottom: 0.5rem;
 }
 
+.app-tile a {
+    text-decoration-color: white;
+}
+
 .app-tile-text {
     background-color: $crsu-slate;
     color: white;
     min-height: 12.5rem;
     padding: 1.5rem;
+}
+
+.app-tile a{
+    text-decoration: none;
+}
+
+.app-tile a:hover{
+    opacity: 0.8;
 }
 
 #app-iframe-container {
