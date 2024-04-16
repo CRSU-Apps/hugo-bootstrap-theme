@@ -1,0 +1,9 @@
+<div class = "col-12 col-lg-4 app-tile">
+    <a href="{{ .Get "link" | relURL }}">
+        <img src = {{ .Get "image" | relURL }} alt = "{{ .Get "title" }} Logo" class = "img-fluid">
+        <div class = "app-tile-text">
+            <h3> {{ .Get "title" }}</h3>
+            <p> {{ .Get "description" }}</p>
+        </div>
+    </a>
+</div>

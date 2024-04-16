@@ -4,6 +4,9 @@ html {
 
 body {
     background-color: $crsu-bg;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
 }
 
 .jumbotron {
@@ -93,4 +96,28 @@ a /*.feather*/ {
 
 .bg-crsu {
     background-color: $crsu-bg;
+}
+
+.app-tile {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.app-tile-text {
+    background-color: $crsu-slate;
+    color: white;
+    min-height: 12.5rem;
+    padding: 1.5rem;
+}
+
+#app-iframe-container {
+    margin-top: 2px;
+    width: 98vw;
+    min-height: 75.5dvh; 
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+#app-iframe-container iframe {
+    height: 75.5dvh;
 }

@@ -10,6 +10,10 @@
   {{ end -}}
 {{ end -}}
 
+{{ with delimit .Keywords "," -}}
+  <meta name="keywords" content="{{ . }}">
+{{ end -}}
+
 {{ if or (.Params.noindex) (eq .Kind "404") }}
   <meta name="robots" content="noindex">
 {{ end }}

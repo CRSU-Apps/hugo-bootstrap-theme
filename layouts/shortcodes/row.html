@@ -1,0 +1,6 @@
+<div class = "row">
+    {{- range (seq 0 (sub (len .Params) 1) ) }}
+        {{- $myArg := $.Get . }}
+        {{ printf `%s` $myArg }}
+    {{- end }}
+</div>
